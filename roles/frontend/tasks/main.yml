@@ -55,3 +55,9 @@
     src: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
     dest: /usr/share/nginx/html
     remote_src: yes
+
+- name: To create a directory
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: directory
+
