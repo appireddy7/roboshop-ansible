@@ -21,6 +21,6 @@
 - name: Start MongoDB
   ansible.builtin.systemd:
     state: started
-    enabled: true
+    enabled: false
 
 
